@@ -13,6 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+use App\Http\Controllers\NightingaleController;
+
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::match(['get', 'post'], '/botman', [NightingaleController::class, 'handle']);
