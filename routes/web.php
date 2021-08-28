@@ -14,9 +14,12 @@ use Illuminate\Support\Facades\Route;
 */
 
 use App\Http\Controllers\NightingaleController;
+use App\Http\Controllers\CrawlerController;
 
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/test', [CrawlerController::class, 'makeRequest']);
 
 Route::match(['get', 'post'], '/botman', [NightingaleController::class, 'handle']);

@@ -2,6 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <link rel="icon" href="{{ URL::asset('favicon.ico') }}" type="image/x-icon"/>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title> Nightingale | Recommender </title>
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
@@ -13,6 +14,7 @@
             justify-content: space-around;
             width: 100vw;
             height:100vh;
+            padding: 10px;
         }
 
         .title {
@@ -31,9 +33,9 @@
     <body>
         <div class="main">
             <div class="title-box">
-                <h1 class="title"> Nightingale<h1>
+                <h1 class="title">🐦 Nightingale<h1>
 
-                <p class="subtitle"> Cansado das mesmas músicas? Eu posso recomendar artistas novos para você! </p>
+                <p class="subtitle">Cansado dos mesmos artistas? Eu posso recomendar artistas novos para você! </p>
             </div>
         <div>
     </body>
@@ -42,9 +44,11 @@
     <script>
 	    var botmanWidget = {
           title: 'Nightingale',
-	        introMessage: "✋ Olá, sou o Nightingale, posso te recomendar artistas baseado em seu gosto musical! Diz o nome de um artista favorito aí!",
+          mainColor: '#90caf9',
+	      introMessage: "🐦 Olá, sou o Nightingale, posso te recomendar artistas baseado em seu gosto musical! Diz o nome de um artista favorito aí!",
           placeholderText: 'Digite o nome de um artista',
-          bubbleAvatarUrl:'https://img-premium.flaticon.com/png/512/1312/premium/1312006.png?token=exp=1629771515~hmac=b865dfd95311110c2c2b5a5d25dc7e7f'
+          bubbleAvatarUrl:'https://cdn1.iconfinder.com/data/icons/media-1-2/32/Communication-Conversation-Chat-512.png',
+          bubbleBackground: 'transparent'
 	    };
     </script>
   
